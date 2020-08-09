@@ -1,0 +1,122 @@
+.heroes-wrapper {
+  border-radius: 5px 5px 0 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button {
+  margin: 30px;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 50px;
+  outline: none;
+  background-color: var(--submitBtnColor);
+  transition: all ease 0.5s;
+  outline: none !important;
+}
+
+.btn-active {
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-left-color: transparent;
+  animation: rotate 1.4s ease 0.5s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-custom-success {
+  position: relative;
+  background-color: #fff;
+  animation: bounce .3s ease-in;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.9);
+  }
+}
+
+.btn-custom-success:before {
+  content: '';
+  position: absolute;
+  background: url(./../check-solid.svg) no-repeat;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  top: 8px;
+}
+
+.next-heroes-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--mainText);
+}
+
+.custom-input {
+
+
+  width: 100%;
+
+  background-color: var(--secondaryColor);
+  border: 2px solid #fff;
+  border-radius: 25px 25px 25px 25px;
+  outline: none;
+  height: 50px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+.btn-copy {
+  position: relative;
+  border-radius: 25px 25px 25px 25px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: yellowgreen;
+  color: #fff;
+  left: -310px;
+}
+
+.custom-input:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.custom-input-group {
+  margin: 0;
+  padding: 0;
+}
+
+#wk-pic {
+  display: block;
+  margin: 0 auto;
+
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border: 2px solid var(--borderColor);
+  margin-bottom: 30px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonin Islam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="res/css/default.css">
+  <link rel="stylesheet" href="res/css/wkarcana.css">
+  <link id="theme-style" rel="stylesheet" href="">
+
+</head>
+
+<body>
+
+  <section class="s1">
+    <div class="main-container">
+      <div class="greeting-wrapper">
+        <h2>Wraith King Arcana Quest Tracker</h2>
+      </div>
+      <div class="intro-wrapper">
+        <div class="nav-wrapper">
+          <div class="dot-wrapper">
+            <div id="dot-red" class="browser-dot"></div>
+            <div id="dot-yellow" class="browser-dot"></div>
+            <div id="dot-green" class="browser-dot"></div>
+          </div>
+          <ul id="navigation">
+            <li><a href="https://github.com/antonin686/Wraith-King-Arcana-Quest-Tracker">Github Repo</a></li>
+            <li>|</li>
+            <!-- <li><a href="index.html#contact">Contact</a></li> -->
+          </ul>
+        </div>
+        <div class="left-column">
+          <img id="wk-pic" src="res/wkarcana.jpg" alt="profile picture">
+          <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+          <div id="theme-option-wrapper">
+            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+          </div>
+          <p id="settings-note">*Themes settings will be saved for <br>your next visit</p>
+        </div>
+        <div class="right-column">
+          <div id="preview-shadow">
+            <div id="preview">
+              <div id="corner-tl" class="corner"></div>
+              <div id="corner-tr" class="corner"></div>
+              <h3>Quest</h3>
+              <p>
+                <br>
+                Make those peasent know their place
+                <br><br>
+              </p>
+              <div id="corner-br" class="corner"></div>
+              <div id="corner-bl" class="corner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s2">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-12 mb-4 pb-4">
+          <h2 class="mt-4 text-center">Hero List <small id="completion"></small></h2>
+          <div class="text-center">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" onclick="heroDisplaySwitch()" class="custom-control-input" id="heroDisplaySwitch">
+              <label class="custom-control-label" for="heroDisplaySwitch">Show Uncollected Heroes Only</label>
+            </div>
+          </div>
+        </div>
+
+        <div id="select-heroes-str" class="col-md-4 mb-3"></div>
+
+        <div id="select-heroes-agi" class="col-md-4 mb-3"></div>
+
+        <div id="select-heroes-int" class="col-md-4 mb-3"></div>
+
+        <div>
+          <button id="btn-done" onclick="updateNames()" class="button">Save</button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="s1">
+    <div class="container">
+
+      <div class="row m-3 p-3">
+        <div class="col-md-8 mx-auto">
+          <h2 class="text-center p-3">Next Bones to Collect</h2>
+        </div>
+        <div class="col-md-8 mx-auto">
+          <div class="row">
+            <div class="col-md-12">
+              <input id="input-boneList" type="text" class="custom-input text-center">
+            </div>
+            <div class="col-md-4 mx-auto">
+              <button id="btn-getBoneList" onclick="getBoneList()" class="button">Get Bone List</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="s2">
+    <div class="container mb-3 pb-3">
+
+      <div class="row m-3 p-3">
+        <div class="col-md-12 mx-auto">
+          <h2 class="text-center p-3">Dont Forget to Give Feedback :)</h2>
+          <h4 class="text-center">
+            <a href="https://github.com/antonin686/Wraith-King-Arcana-Quest-Tracker">Repo</a> |
+            
+          </h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="footer">
+    <p> &#169; Developed by Md.Antonin Islam 2020</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="res/js/wk_script.js"></script>
+  <script src="res/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  background-image: url(../bgg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.profile{
+    margin: auto;
+    margin-top: 15%;
+    background: rgba(0, 0, 0, 0.5) !important;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.education{
+    margin: auto;
+    margin-top: 5%;
+    background: rgba(0, 0, 0, 0.5) !important;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+hr{
+    color: white;
+}
+.box {
+  width: 500px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+}
+.profile-image {
+  
+  width: 200px;
+  height: 200px;
+}
+.profile h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box p {
+  text-align: justify;
+}
+.profile ul {
+  margin: 0;
+  padding: 0;
+}
+.profile li {
+  display: inline;
+  margin: 6px;
+  list-style: none;
+}
+.nav tr {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 40px;
+}
+.nav td {
+  width: 100px;
+  text-align: center;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.nav a:hover {
+  color: blue;
+}
+.contactBox {
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  margin: auto;
+  margin-top: 10%;
+  color: white;
+}
+.navbar-nav {
+  margin: 0px;
+  padding: 0px;
+}
+.nav-item {
+  width: 100px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0px 5px;
+}
+.nav-link {
+  color: rgb(216, 215, 215) !important;
+}
+.active {
+  color:white !important;
+}
+.nav-link:hover {
+  color: white !important;
+}
+
+.bg-transparent {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bg-transparent5 {
+    margin-top: 10% !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
+
+.text-transparent{
+    color: rgba(0, 0, 0, 0.0) !important;;
+}
+  
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: blue;
+}
